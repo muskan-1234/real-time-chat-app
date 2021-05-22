@@ -5,7 +5,7 @@ const cookieParser = require('cookie-parser')
 var corsOptions = {
     origin: 'http://localhost:3000',
     credentials: true,
-    optionsSuccessStatus: 200 // For legacy browser support
+    optionsSuccessStatus: 200
 }
 const authRoutes = require('./routes/authRoutes');
 app.use(cors(corsOptions));
